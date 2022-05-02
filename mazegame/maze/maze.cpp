@@ -367,21 +367,18 @@ void savebmp(int xspecial, int yspecial){
 	   fprintf(outfile, "%c", (headers[n] & (unsigned int) 0xFF000000) >> 24);
 	}
 
-	//Actual writing of data begins here:
 	for(y = 0; y <= height - 1; y++){
 		for(x = 0; x <= width - 1; x++){
-			if(x%2 == 1 && y%2 == 1){
 				if(x/2+1 == xspecial && y/2+1 == yspecial) RED;
 				else{
-					if(MAZE[x/2+1][y/2+1].in) WHITE; else BLACK;
+					if(MAZE[x/2+1][y/2+1]=='#') GRAY;
+					else if(MAZE[x/2+1][y/2+1]=='$') GREEN;
+					else if(MAZE[x/2+1][y/2+1]=='&') BROWN;
+					else if(MAZE[x/2+1][y/2+1]=='%') RED;
+					else if(MAZE[x/2+1][y/2+1]=='@') BLACK;
+					else if(MAZE[x/2+1][y/2+1]=='!') BLUE;
+					 else BACK;
 				}
-			}else if(x%2 == 0 && y%2 == 0){
-				BLACK;
-			}else if(x%2 == 0 && y%2 == 1){
-				if(MAZE[x/2+1][y/2+1].left) BLACK; else WHITE;
-			}else if(x%2 == 1 && y%2 == 0){
-				if(MAZE[x/2+1][y/2+1].up) BLACK; else WHITE;
-			}
 		}
 		if (extrabytes){     // See above - BMP lines must be of lengths divisible by 4.
 			for (n = 1; n <= extrabytes; n++){
