@@ -183,13 +183,13 @@ vector<pair<SDL_Rect,int>> set1Points(){
     vector<pair<SDL_Rect,int>> points;
     points.push_back(createwall2(1046,68,54,47,50));//Himadri circle:coin.png:hint1
     points.push_back(createwall2(418,220,67,53,150));//Shivalik:ruby.png:hint2
-    points.push_back(createwall2(800,298,74,107,-50));//Bharti:penalty1
+    points.push_back(createwall2(800,298,74,107,-50));//Bharti:warning1
     points.push_back(createwall2(1049,0,39,29,100));//Gate1:emerald.png:hint3
     points.push_back(createwall2(510,330,47,66,200));//Masala Mix:sapphire.png:hint4
-    points.push_back(createwall2(0,447,77,120,-100));//Karakoram:penalty2
+    points.push_back(createwall2(0,447,77,120,-100));//Karakoram:warning2
     points.push_back(createwall2(882,232,57,83,75));//Amul:silver.png:hint5
     points.push_back(createwall2(416,304,74,66,175));//Zanskar:gold.png:hint6
-    points.push_back(createwall2(1090,145,111,81,-75));//Dogra hall:penalty3
+    points.push_back(createwall2(1090,145,111,81,-75));//Dogra hall:warning3
     points.push_back(createwall2(4,256,68,61,25));//Holistic:pearl.png:hint7
     points.push_back(createwall2(3,462,66,92,0));//Karakoram:diamond.png:hint15
 
@@ -200,13 +200,13 @@ vector<pair<SDL_Rect,int>> set2Points(){
     vector<pair<SDL_Rect,int>> points;
     points.push_back(createwall2(725,681,216,146,50));//Mittal Complex:coin.png:hint8
     points.push_back(createwall2(509,264,51,39,150));//Chaayos:ruby.png:hint9
-    points.push_back(createwall2(668,461,140,127,-115));//Football ground:penalty4
+    points.push_back(createwall2(668,461,140,127,-115));//Football ground:warning4
     points.push_back(createwall2(571,299,145,104,100));//Gate1:emerald.png:hint10
     points.push_back(createwall2(1300,132,105,74,200));//Mother dairy:sapphire.png:hint11
-    points.push_back(createwall2(1051,431,137,188,-60));//Food joint:penalty5
+    points.push_back(createwall2(1051,431,137,188,-60));//Food joint:warning5
     points.push_back(createwall2(246,487,75,50,75));//Guest house:silver.png:hint12
     points.push_back(createwall2(799,300,75,106,175));//Bharti:gold.png:hint13
-    points.push_back(createwall2(124,95,131,76,-200));//Kumaon:penalty6
+    points.push_back(createwall2(124,95,131,76,-200));//Kumaon:warning6
     points.push_back(createwall2(757,72,89,97,25));//Udaigiri:pearl.png:hint14
     points.push_back(createwall2(2,124,72,89,0));//Jwalamukhi:diamond.png:hint29
     
@@ -216,13 +216,13 @@ vector<pair<SDL_Rect,int>> set2Points(){
 vector<pair<SDL_Rect,int>> set3Points(){
     points.push_back(createwall2(0,332,73,104,50));//Aravali:coin.png:hint16
     points.push_back(createwall2(958,238,98,68,150));//Library:ruby.png:hint17
-    points.push_back(createwall2(1140,0,77,64,-175));//Kailash:penalty8
+    points.push_back(createwall2(1140,0,77,64,-175));//Kailash:warning8
     points.push_back(createwall2(245,575,79,91,100));//Nalanda:emerald.png:hint18
     points.push_back(createwall2(552,99,79,75,200));//Satpura:sapphire.png:hint20
-    points.push_back(createwall2(668,461,140,127,-25));//Football ground:penalty9
+    points.push_back(createwall2(668,461,140,127,-25));//Football ground:warning9
     points.push_back(createwall2(885,62,110,69,75));//Biotech lawns:silver.png:hint22
     points.push_back(createwall2(1093,242,105,84,175));//LHC:gold.png:hint28
-    points.push_back(createwall2(350,495,235,183,-150));//SAC:penalty7
+    points.push_back(createwall2(350,495,235,183,-150));//SAC:warning7
     points.push_back(createwall2(484,698,91,56,25));//OAT:pearl.png:hint24
     points.push_back(createwall2(1090,145,111,81,0));//Dogra hall:diamond.png:hint23
     
