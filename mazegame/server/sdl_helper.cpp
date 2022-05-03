@@ -236,17 +236,17 @@ SDL_Texture* loadTexture( std::string path )
 SDL_Texture* LTexture::getTexture(){
     return mTexture;
 }
-void LTexture::free()
-{
-    //Free texture if it exists
-    if( mTexture != NULL )
-    {
-        SDL_DestroyTexture( mTexture );
-        mTexture = NULL;
-        mWidth = 0;
-        mHeight = 0;
-    }
-}
+// void LTexture::free()
+// {
+//     //Free texture if it exists
+//     if( mTexture != NULL )
+//     {
+//         SDL_DestroyTexture( mTexture );
+//         mTexture = NULL;
+//         mWidth = 0;
+//         mHeight = 0;
+//     }
+// }
 
 void LTexture::setColor( Uint8 red, Uint8 green, Uint8 blue )
 {
@@ -267,21 +267,21 @@ void LTexture::setAlpha( Uint8 alpha )
 }
 
 
-void LTexture::render( int x, int y, SDL_Rect* clip, double angle, SDL_Point* center, SDL_RendererFlip flip )
-{
-    //Set rendering space and render to screen
-    SDL_Rect renderQuad = { x, y, mWidth, mHeight };
+// void LTexture::render( int x, int y, SDL_Rect* clip, double angle, SDL_Point* center, SDL_RendererFlip flip )
+// {
+//     //Set rendering space and render to screen
+//     SDL_Rect renderQuad = { x, y, mWidth, mHeight };
 
-    //Set clip rendering dimensions
-    if( clip != NULL )
-    {
-        renderQuad.w = clip->w;
-        renderQuad.h = clip->h;
-    }
+//     //Set clip rendering dimensions
+//     if( clip != NULL )
+//     {
+//         renderQuad.w = clip->w;
+//         renderQuad.h = clip->h;
+//     }
 
-    //Render to screen
-    SDL_RenderCopyEx( gRenderer, mTexture, clip, &renderQuad, angle, center, flip );
-}
+//     //Render to screen
+//     SDL_RenderCopyEx( gRenderer, mTexture, clip, &renderQuad, angle, center, flip );
+// }
 
 int LTexture::getWidth()
 {
