@@ -298,9 +298,13 @@ Dot::Dot()
     //Initialize the offsets
     mPosX = 0;
     mPosY = 0;
-    cpoint=0;lives=2;
+    cpoint=0;
+    lives=2;
+    cpoint1=0;
     //Initialize the velocity
     mVelX = 0;
     mVelY = 0;
 }
+
+
 
