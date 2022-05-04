@@ -181,6 +181,16 @@ void Dot::move1()
 //         PlayerCollider.y = mPosY;
 //     }
 }
+	void Dot::render1()
+{
+    //Show the dot
+	gDotTexture.render( mPosX, mPosY );
+}
+void Dot::render2()
+{
+    //Show the dot
+    gDot2Texture.render( mPosX, mPosY );
+}
 bool init()
 {
 	//Initialization flag
