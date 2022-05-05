@@ -117,3 +117,32 @@ class LTimer
         bool mPaused;
         bool mStarted;
 };
+
+class Dot
+{
+    public:
+        //The dimensions of the dot
+        static const int DOT_WIDTH = 5;
+        static const int DOT_HEIGHT = 5;
+
+        //Maximum axis velocity of the dot
+        static const int DOT_VEL = 4;
+
+        //Initializes the variables
+        Dot();
+
+        //Takes key presses and adjusts the dot's velocity
+        void handleEvent( SDL_Event& e );
+
+        //Moves the dot
+    void move(); void move1();
+
+        //Shows the dot on the screen
+        void render1();
+    void render2();
+            //The X and Y offsets of the dot
+        int mPosX, mPosY;
+    int cpoint ,lives,cpoint1;
+        //The velocity of the dot
+        int mVelX, mVelY;
+};
