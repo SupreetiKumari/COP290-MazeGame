@@ -234,3 +234,383 @@ bool init()
 
 	return success;
 }
+	
+bool loadMedia()
+{
+    // Loading success flag
+    bool success = true;
+    gFont = TTF_OpenFont("lazy.ttf", 28);
+    SDL_Color textColor = {0, 0xff, 0xff};
+
+    gTexture = loadTexture("/Users/arushigoyal/Downloads/task2/background.png");
+
+    if (gTexture == NULL)
+    {
+        printf("Failed to load texture image!\n");
+        success = false;
+    }
+    gTexture1 = loadTexture("/Users/arushigoyal/Downloads/task2/karakoram.png");
+
+    if (gTexture == NULL)
+    {
+        printf("Failed to load texture image!\n");
+        success = false;
+    }
+    // Load dot texture
+    if (!gDotTexture.loadFromFile("player1.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gDot2Texture.loadFromFile("player2.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    // gcoin50texture,gdiamondtexture,gemerald100teexture ,ggold175texture,gpearl25texture, gruby150texture,gsapphire200texture,gsilver75texture
+    if (!gcoin50texture.loadFromFile("coin.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!lives1texture.loadFromFile("lives1.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!lives2texture.loadFromFile("lives2.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!lives3texture.loadFromFile("lives3.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gdiamondtexture.loadFromFile("diamond.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gemerald100teexture.loadFromFile("emerald.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ggold175texture.loadFromFile("gold.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gpearl25texture.loadFromFile("pearl.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gruby150texture.loadFromFile("ruby.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gsapphire200texture.loadFromFile("sapphire.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gsilver75texture.loadFromFile("silver.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    // gwarning1texture,gwarning2texture,gwarning3texture,gwarning4texture,gwarning5texture,gwarning6texture,gwarning7texture,gwarning8texture,gwarning9texture;
+    if (!gwarning1texture.loadFromFile("warning1.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gwarning2texture.loadFromFile("warning2.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gwarning3texture.loadFromFile("warning3.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gwarning4texture.loadFromFile("warning4.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gwarning5texture.loadFromFile("warning5.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gwarning6texture.loadFromFile("warning6.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gwarning7texture.loadFromFile("warning7.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gwarning8texture.loadFromFile("warning8.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gwarning9texture.loadFromFile("warning9.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint1texture.loadFromFile("hint1.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint2texture.loadFromFile("hint2.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint3texture.loadFromFile("hint3.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint4texture.loadFromFile("hint4.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint5texture.loadFromFile("hint5.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint6texture.loadFromFile("hint6.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint7texture.loadFromFile("hint7.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint8texture.loadFromFile("hint8.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint9texture.loadFromFile("hint9.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint10texture.loadFromFile("hint10.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint11texture.loadFromFile("hint11.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint12texture.loadFromFile("hint12.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint13texture.loadFromFile("hint13.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint14texture.loadFromFile("hint14.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint15texture.loadFromFile("hint15.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint16texture.loadFromFile("hint16.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint17texture.loadFromFile("hint17.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint18texture.loadFromFile("hint18.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint19texture.loadFromFile("hint19.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint20texture.loadFromFile("hint20.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint21texture.loadFromFile("hint21.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint22texture.loadFromFile("hint22.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint23texture.loadFromFile("hint23.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint24texture.loadFromFile("hint24.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint25texture.loadFromFile("hint25.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint26texture.loadFromFile("hint26.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint27texture.loadFromFile("hint27.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint28texture.loadFromFile("hint28.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint29texture.loadFromFile("hint29.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ghint30texture.loadFromFile("hint30.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ggamewontexture.loadFromFile("gamewon.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ggamefinishtexture.loadFromFile("gamefinish.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!ggameovertexture.loadFromFile("gameover.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gpenalty1texture.loadFromFile("penalty1.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gpenalty2texture.loadFromFile("penalty2.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gpenalty3texture.loadFromFile("penalty3.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gpenalty4texture.loadFromFile("penalty4.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gpenalty5texture.loadFromFile("penalty5.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gpenalty6texture.loadFromFile("penalty6.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gpenalty7texture.loadFromFile("penalty7.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gpenalty8texture.loadFromFile("penalty8.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gpenalty9texture.loadFromFile("penalty9.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+
+    if (!gstartTexture.loadFromFile("/Users/arushigoyal/Downloads/task2/startmenu.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gstartdarkTexture.loadFromFile("/Users/arushigoyal/Downloads/task2/startmenudark.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gokmenuTexture.loadFromFile("/Users/arushigoyal/Downloads/task2/okmenu.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gokmenudarkTexture.loadFromFile("/Users/arushigoyal/Downloads/task2/okmenudark.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!giitdelhiTexture.loadFromFile("/Users/arushigoyal/Downloads/task2/iitdelhi.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+    if (!gtasksmenuTexture.loadFromFile("/Users/arushigoyal/Downloads/task2/sapphire.png"))
+    {
+        printf("Failed to load dot texture!\n");
+        success = false;
+    }
+
+    return success;
+}
+
