@@ -266,24 +266,23 @@ bool init()
 	IMG_Quit();
 	SDL_Quit();
 }
-
 int main( int argc, char* args[] )
 {
     Music musicobj = Music();
-    client player1;
+    server player1;
     string clientdata = "",data ="";
    
     cout<<clientdata<<"\n";
     PlayerCollider.w =  5;
     PlayerCollider.h = 5;
     int setting = (int)(rand()%3) +1 ;
-    setting=1;Uint32 timepassed = 0; timepassed=SDL_GetTicks();
+    setting=3;Uint32 timepassed = 0; timepassed=SDL_GetTicks();
     if(setting == 1)
     {
         bool quit10=true;bool quit9=true;bool quit8=true;bool quit7=true;
     walls = setWalls();
    // walls.push_back(createwall(153,28,486,86));
-      // remember -------------------  musicobj.maintune();
+       musicobj.maintune();
     points=set1Points();
         point1s=set1Point1s();point2s=set1Point2s();point3s=set1Point3s();
 	//Start up SDL and create window
@@ -362,25 +361,27 @@ int main( int argc, char* args[] )
                         printf( "Failed to render text texture!\n" );
                  //   success = false;
                     }
-                if( !timetexture.loadFromRenderedText( "TIME LEFT=", textColor ) )
-                    {
-                                
-                        printf( "Failed to render text texture!\n" );
-                 //   success = false;
-                    }
-                if( !timeatexture.loadFromRenderedText( to_string(120-(SDL_GetTicks()/1000)), textColor ) )
+//                if( !timetexture.loadFromRenderedText( "TIME LEFT=", textColor ) )
+//                    {
+//
+//                        printf( "Failed to render text texture!\n" );
+//                 //   success = false;
+//                    }
+                if( !timeatexture.loadFromRenderedText( to_string(300-(SDL_GetTicks()/1000)), textColor ) )
                     {
                                 
                         printf( "Failed to render text texture!\n" );
                  //   success = false;
                     }
                 
-                musicobj.maintune();data="";
+                data="";
                 data+= to_string(dot.mPosX);
                 data += "_";
                 data += to_string(dot.mPosY);
                 data += "_";
                 data += to_string(dot.cpoint1);
+                data += "_";
+                data += to_string(dot.lives);
 				//Handle events on queue
                 data="";
             data+= to_string(dot.mPosX);
@@ -388,64 +389,18 @@ int main( int argc, char* args[] )
             data += to_string(dot.mPosY);
             data += "_";
             data += to_string(dot.cpoint1);
+                data += "_";
+                data += to_string(dot.lives);
                 clientdata = player1.sendrecieve(data);
                 opponent op3 = getopponentdata(clientdata);
                 dot2.mPosX=op3.x;
                 dot2.mPosY=op3.y;
                 dot2.cpoint1=op3.s;
+                dot2.lives=op3.l;
                 if(dot.cpoint1>=6000)
                 {
                     ggamewontexture.render(0,0);
-                    SDL_RenderPresent( gRenderer );SDL_Delay(1000); quit=true;
-                    
-                }
-                data="";
-            data+= to_string(dot.mPosX);
-            data += "_";
-            data += to_string(dot.mPosY);
-            data += "_";
-            data += to_string(dot.cpoint1);
-                clientdata = player1.sendrecieve(data);
-                opponent op2 = getopponentdata(clientdata);
-                dot2.mPosX=op2.x;
-                dot2.mPosY=op2.y;
-                dot2.cpoint1=op2.s;
-              if(dot2.cpoint1>=6000)
-                {
-                    ggameovertexture.render(0,0);
                     SDL_RenderPresent( gRenderer );SDL_Delay(1000);quit=true;
                     
                 }
-                data="";
-            data+= to_string(dot.mPosX);
-            data += "_";
-            data += to_string(dot.mPosY);
-            data += "_";
-            data += to_string(dot.cpoint1);
-                clientdata = player1.sendrecieve(data);
-                opponent op5 = getopponentdata(clientdata);
-                dot2.mPosX=op5.x;
-                dot2.mPosY=op5.y;
-                dot2.cpoint1=op5.s;
-                 if((120-(SDL_GetTicks()/1000)) <= 5 && dot.cpoint1> dot2.cpoint1)
-                {
-                    ggamewontexture.render(0,0);
-                    SDL_RenderPresent( gRenderer );SDL_Delay(1000); quit=true;
-                }
-                data="";
-            data+= to_string(dot.mPosX);
-            data += "_";
-            data += to_string(dot.mPosY);
-            data += "_";
-            data += to_string(dot.cpoint1);
-                clientdata = player1.sendrecieve(data);
-                opponent op6 = getopponentdata(clientdata);
-                dot2.mPosX=op6.x;
-                dot2.mPosY=op6.y;
-                dot2.cpoint1=op6.s;
-                if((120-(SDL_GetTicks()/1000)) <= 5 && dot.cpoint1<  dot2.cpoint1)
-                {
-                    ggameovertexture.render(0,0);
-                    SDL_RenderPresent( gRenderer );SDL_Delay(1000); quit=true;
-                }
-            
+                 
