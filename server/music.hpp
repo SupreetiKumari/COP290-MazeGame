@@ -23,7 +23,7 @@ class Music{
         
             if( Mix_PlayingMusic() == 0 )
             {
-            	gMusic=Mix_LoadMUS( "/Users/supreetikumari/Downloads/task2/amongus.mp3" );
+            	gMusic=Mix_LoadMUS( "resources/amongus.mp3" );
             	if( gMusic == NULL )
             {
                 printf( "SDL_mixer Error: %s\n", Mix_GetError() );
@@ -62,7 +62,7 @@ class Music{
 //     }
 
         void keypress(){
-            genetrbuilding=Mix_LoadWAV( "/Users/supreetikumari/Downloads/task2/press.wav" );
+            genetrbuilding=Mix_LoadWAV( "resources/press.wav" );
             if(Mix_Playing(2)==0){
                 Mix_PlayChannel( 2, genetrbuilding, 0 );
             }
