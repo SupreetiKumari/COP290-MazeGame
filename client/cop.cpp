@@ -998,7 +998,7 @@ int main( int argc, char* args[] )
     client player1;
     string clientdata = "",data ="";
    
-    cout<<clientdata<<"\n";
+    //cout<<clientdata<<"\n";
     PlayerCollider.w =  5;
     PlayerCollider.h = 5;
     int setting = (int)(rand()%2) +2 ;
@@ -1171,7 +1171,7 @@ int main( int argc, char* args[] )
                 dot2.mPosX=op7.x;
                 dot2.mPosY=op7.y;
                 dot2.cpoint1=op7.s;dot2.lives=op7.l;
-                cout<<dot2.lives<<"\n";
+                //cout<<dot2.lives<<"\n";
                 if(dot2.lives<=0)
                 {
                     ggamewon1texture.render(0,0);
@@ -1961,7 +1961,7 @@ int main( int argc, char* args[] )
                 dot2.mPosX=op8.x;
                 dot2.mPosY=op8.y;
                 dot2.cpoint1=op8.s;dot2.lives=op8.l;
-                cout<<dot2.lives<<"\n";
+                //cout<<dot2.lives<<"\n";
                 if(dot2.lives<=0)
                 {
                     ggamewon1texture.render(0,0);
@@ -2016,7 +2016,7 @@ quit7=false;
 //        {
 //
 //        }
-        cout<<c<<"\n";}
+        //cout<<c<<"\n";}
         else if(setting == 2)
     {
       
@@ -2188,7 +2188,7 @@ quit7=false;
                 dot2.mPosX=op7.x;
                 dot2.mPosY=op7.y;
                 dot2.cpoint1=op7.s;dot2.lives=op7.l;
-                cout<<dot2.lives<<"\n";
+                //cout<<dot2.lives<<"\n";
                 if(dot2.lives<=0)
                 {
                     ggamewon1texture.render(0,0);
@@ -2970,7 +2970,7 @@ quit7=false;
                 dot2.mPosX=op8.x;
                 dot2.mPosY=op8.y;
                 dot2.cpoint1=op8.s;dot2.lives=op8.l;
-                cout<<dot2.lives<<"\n";
+                //cout<<dot2.lives<<"\n";
                 if(dot2.lives<=0)
                 {
                     ggamewon1texture.render(0,0);
@@ -3025,7 +3025,7 @@ quit7=false;
         //        {
         //
         //        }
-        cout<<c<<"\n";
+        //cout<<c<<"\n";
 
         }
           else if(setting == 3)
@@ -3199,7 +3199,7 @@ quit7=false;
                 dot2.mPosX=op7.x;
                 dot2.mPosY=op7.y;
                 dot2.cpoint1=op7.s;dot2.lives=op7.l;
-                cout<<dot2.lives<<"\n";
+                //cout<<dot2.lives<<"\n";
                 if(dot2.lives<=0)
                 {
                     ggamewon1texture.render(0,0);
@@ -3980,7 +3980,7 @@ quit7=false;
                 dot2.mPosX=op8.x;
                 dot2.mPosY=op8.y;
                 dot2.cpoint1=op8.s;dot2.lives=op8.l;
-                cout<<dot2.lives<<"\n";
+                //cout<<dot2.lives<<"\n";
                 if(dot2.lives<=0)
                 {
                     ggamewon1texture.render(0,0);
@@ -4035,6 +4035,6 @@ quit7=false;
         //        {
         //
         //        }
-        cout<<c<<"\n";}
+        //cout<<c<<"\n";}
 	return 0;
     }
