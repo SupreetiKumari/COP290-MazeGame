@@ -57,11 +57,11 @@ class client{
             exit(EXIT_FAILURE);
         }
     }
-    string sendrecieve(string s){
+    string sendrecieve(string the){
         for(int i=0;i<1024;i++){
            buffer[i]='\0';
        }
-        const char* hello=s.c_str();
+        const char* hello=the.c_str();
         send(sock, hello, strlen(hello), 0);
         
         valread = read(sock, buffer, 1024);
