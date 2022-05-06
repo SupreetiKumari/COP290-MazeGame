@@ -250,3 +250,202 @@ bool init()
 	return success;
 }
 	//
+	
+	void close()
+{
+	//Free loaded images
+	gDotTexture.free();
+
+	//Destroy window	
+	SDL_DestroyRenderer( gRenderer );
+	SDL_DestroyWindow( gWindow );
+	gWindow = NULL;
+	gRenderer = NULL;
+
+	//Quit SDL subsystems
+	IMG_Quit();
+	SDL_Quit();
+}
+
+int main( int argc, char* args[] )
+{
+    Music musicobj = Music();
+    client player1;
+    string clientdata = "",data ="";
+   
+    cout<<clientdata<<"\n";
+    PlayerCollider.w =  5;
+    PlayerCollider.h = 5;
+    int setting = (int)(rand()%3) +1 ;
+    setting=1;Uint32 timepassed = 0; timepassed=SDL_GetTicks();
+    if(setting == 1)
+    {
+        bool quit10=true;bool quit9=true;bool quit8=true;bool quit7=true;
+    walls = setWalls();
+   // walls.push_back(createwall(153,28,486,86));
+      // remember -------------------  musicobj.maintune();
+    points=set1Points();
+        point1s=set1Point1s();point2s=set1Point2s();point3s=set1Point3s();
+	//Start up SDL and create window
+	init();
+	//Load media
+	loadMedia();
+	SDL_Color textColor = { 0, 0x00, 0x00 };
+//    giitdelhiTexture.render(0,0);
+//    SDL_RenderPresent( gRenderer );
+//    SDL_Delay(2000);
+	// SDL_RenderPresent( gRenderer );
+			//Main loop flag
+			bool quit = false;
+
+			//Event handler
+			SDL_Event e;
+    while(!quit){
+       // musicobj.keypress2();
+        while( SDL_PollEvent( &e ) != 0 ){
+            if( e.type == SDL_QUIT ){
+                close();
+                return 0;
+            }
+            int x = handleMouseEvent(e, createwall(548,443,339,110));
+            if(x == 0){
+                gstartTexture.render(0,0);
+                SDL_RenderPresent( gRenderer );
+            }else if(x == 1){
+                
+                gstartdarkTexture.render(0,0);
+                SDL_RenderPresent( gRenderer );
+            }else if(x == 2){
+                musicobj.keypress();
+                quit = true;
+            }
+        }
+    }quit=false;
+    while(!quit){
+       // musicobj.keypress3();
+        while( SDL_PollEvent( &e ) != 0 ){
+            if( e.type == SDL_QUIT ){
+                close();
+                return 0;
+            }
+          
+            int x = handleMouseEvent(e, createwall(313,648,372,164));
+            if(x == 0){
+                gokmenuTexture.render(0,0);
+                SDL_RenderPresent( gRenderer );
+            }else if(x == 1){
+                gokmenudarkTexture.render(0,0);
+                SDL_RenderPresent( gRenderer );
+            }else if(x == 2){
+                musicobj.keypress();
+                quit = true;
+            }
+        }
+    }
+			//The dot that will be moving around on the screen
+			Dot dot;
+        Dot dot2;
+            int cc=0;
+    quit=false; bool taskscreen = false;
+        bool hint1=false;  bool hint2=false;  bool hint3=false;  bool hint4=false;  bool hint5=false;  bool hint6=false;  bool hint7=false;  bool hint8=false;  bool hint9=false;  bool hint10=false; bool hint11=false;
+			//While application is running
+			while( !quit )
+			{
+                score1=dot.cpoint1;
+                if( !instructionsanswer.loadFromRenderedText( to_string(score1), textColor ) )
+                    {
+                    printf( "Failed to render text texture!\n" );
+                 }
+                if( !instructionscore.loadFromRenderedText( "SCORE=", textColor ) )
+                    {
+                                
+                        printf( "Failed to render text texture!\n" );
+                 //   success = false;
+                    }
+                if( !timetexture.loadFromRenderedText( "TIME LEFT=", textColor ) )
+                    {
+                                
+                        printf( "Failed to render text texture!\n" );
+                 //   success = false;
+                    }
+                if( !timeatexture.loadFromRenderedText( to_string(120-(SDL_GetTicks()/1000)), textColor ) )
+                    {
+                                
+                        printf( "Failed to render text texture!\n" );
+                 //   success = false;
+                    }
+                
+                musicobj.maintune();data="";
+                data+= to_string(dot.mPosX);
+                data += "_";
+                data += to_string(dot.mPosY);
+                data += "_";
+                data += to_string(dot.cpoint1);
+				//Handle events on queue
+                data="";
+            data+= to_string(dot.mPosX);
+            data += "_";
+            data += to_string(dot.mPosY);
+            data += "_";
+            data += to_string(dot.cpoint1);
+                clientdata = player1.sendrecieve(data);
+                opponent op3 = getopponentdata(clientdata);
+                dot2.mPosX=op3.x;
+                dot2.mPosY=op3.y;
+                dot2.cpoint1=op3.s;
+                if(dot.cpoint1>=6000)
+                {
+                    ggamewontexture.render(0,0);
+                    SDL_RenderPresent( gRenderer );SDL_Delay(1000); quit=true;
+                    
+                }
+                data="";
+            data+= to_string(dot.mPosX);
+            data += "_";
+            data += to_string(dot.mPosY);
+            data += "_";
+            data += to_string(dot.cpoint1);
+                clientdata = player1.sendrecieve(data);
+                opponent op2 = getopponentdata(clientdata);
+                dot2.mPosX=op2.x;
+                dot2.mPosY=op2.y;
+                dot2.cpoint1=op2.s;
+              if(dot2.cpoint1>=6000)
+                {
+                    ggameovertexture.render(0,0);
+                    SDL_RenderPresent( gRenderer );SDL_Delay(1000);quit=true;
+                    
+                }
+                data="";
+            data+= to_string(dot.mPosX);
+            data += "_";
+            data += to_string(dot.mPosY);
+            data += "_";
+            data += to_string(dot.cpoint1);
+                clientdata = player1.sendrecieve(data);
+                opponent op5 = getopponentdata(clientdata);
+                dot2.mPosX=op5.x;
+                dot2.mPosY=op5.y;
+                dot2.cpoint1=op5.s;
+                 if((120-(SDL_GetTicks()/1000)) <= 5 && dot.cpoint1> dot2.cpoint1)
+                {
+                    ggamewontexture.render(0,0);
+                    SDL_RenderPresent( gRenderer );SDL_Delay(1000); quit=true;
+                }
+                data="";
+            data+= to_string(dot.mPosX);
+            data += "_";
+            data += to_string(dot.mPosY);
+            data += "_";
+            data += to_string(dot.cpoint1);
+                clientdata = player1.sendrecieve(data);
+                opponent op6 = getopponentdata(clientdata);
+                dot2.mPosX=op6.x;
+                dot2.mPosY=op6.y;
+                dot2.cpoint1=op6.s;
+                if((120-(SDL_GetTicks()/1000)) <= 5 && dot.cpoint1<  dot2.cpoint1)
+                {
+                    ggameovertexture.render(0,0);
+                    SDL_RenderPresent( gRenderer );SDL_Delay(1000); quit=true;
+                }
+            
