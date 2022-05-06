@@ -180,57 +180,57 @@ vector<SDL_Rect> setWalls(){
 
 vector<pair<SDL_Rect,int>> set1Points(){
     vector<pair<SDL_Rect,int>> points;
-    points.push_back(createwall2(1046,68,10,10,50));//Himadri circle:coin.png:hint1
-    points.push_back(createwall2(418,220,10,10,150));//Shivalik:ruby.png:hint2
+    points.push_back(createwall2(1046,68,20,20,50));//Himadri circle:coin.png:hint1
+    points.push_back(createwall2(418,220,20,20,150));//Shivalik:ruby.png:hint2
     points.push_back(createwall2(800,298,100,100,-50));//Bharti:warning1
-    points.push_back(createwall2(1049,0,10,10,100));//Gate1:emerald.png:hint3
-    points.push_back(createwall2(510,330,10,10,200));//Masala Mix:sapphire.png:hint4
+    points.push_back(createwall2(1049,0,20,20,100));//Gate1:emerald.png:hint3
+    points.push_back(createwall2(510,330,20,20,200));//Masala Mix:sapphire.png:hint4
     points.push_back(createwall2(668,461,200,200,-115));//Football ground:warning4
-    points.push_back(createwall2(882,232,10,10,75));//Amul:silver.png:hint5
-    points.push_back(createwall2(416,304,10,10,175));//Zanskar:gold.png:hint6
+    points.push_back(createwall2(882,232,20,20,75));//Amul:silver.png:hint5
+    points.push_back(createwall2(416,304,20,20,175));//Zanskar:gold.png:hint6
    // points.push_back(createwall2(1090,145,100,100,-75));//Dogra hall:warning3
     points.push_back(createwall2(350,495,100,100,-150));//SAC:warning7
-    points.push_back(createwall2(4,256,10,10,25));//Holistic:pearl.png:hint7
-    points.push_back(createwall2(3,500,10,10,5000));//Karakoram:diamond.png:hint15 - changed for now remember
-    points.push_back(createwall2(2,124,10,10,0));//Jwalamukhi:diamond.png:hint29
-    points.push_back(createwall2(1090,145,10,10,0));//Dogra hall:diamond.png:hint23
+    points.push_back(createwall2(4,256,20,20,25));//Holistic:pearl.png:hint7
+    points.push_back(createwall2(3,500,20,20,5000));//Karakoram:diamond.png:hint15 - changed for now remember
+    points.push_back(createwall2(2,124,20,20,0));//Jwalamukhi:diamond.png:hint29
+    points.push_back(createwall2(1090,145,20,20,0));//Dogra hall:diamond.png:hint23
 
     return points;
 }
 vector<pair<SDL_Rect,int>> set2Points(){
     vector<pair<SDL_Rect,int>> points;
-    points.push_back(createwall2(725,681,10,10,50));//Mittal Complex:coin.png:hint8
-    points.push_back(createwall2(509,264,10,10,150));//Chaayos:ruby.png:hint9
+    points.push_back(createwall2(725,681,20,20,50));//Mittal Complex:coin.png:hint8
+    points.push_back(createwall2(509,264,20,20,150));//Chaayos:ruby.png:hint9
     points.push_back(createwall2(1140,0,100,100,-175));//Kailash:warning8
-    points.push_back(createwall2(571,299,10,10,100));//Gate1:emerald.png:hint10
-    points.push_back(createwall2(1300,132,10,10,200));//Mother dairy:sapphire.png:hint11
+    points.push_back(createwall2(571,299,20,20,100));//Gate1:emerald.png:hint10
+    points.push_back(createwall2(1300,132,20,20,200));//Mother dairy:sapphire.png:hint11
     points.push_back(createwall2(1051,431,100,100,-60));//Food joint:warning5
-    points.push_back(createwall2(246,487,10,10,75));//Guest house:silver.png:hint12
-    points.push_back(createwall2(799,300,10,10,175));//Bharti:gold.png:hint13
+    points.push_back(createwall2(246,487,20,20,75));//Guest house:silver.png:hint12
+    points.push_back(createwall2(799,300,20,20,175));//Bharti:gold.png:hint13
     points.push_back(createwall2(124,95,100,100,-200));//Kumaon:warning6
-    points.push_back(createwall2(757,72,10,10,25));//Udaigiri:pearl.png:hint14
-    points.push_back(createwall2(3,500,10,10,0));//Karakoram:diamond.png:hint15 - changed for now remember
-    points.push_back(createwall2(2,124,10,10,5000));//Jwalamukhi:diamond.png:hint29
-    points.push_back(createwall2(1090,145,10,10,0));//Dogra hall:diamond.png:hint23
+    points.push_back(createwall2(757,72,20,20,25));//Udaigiri:pearl.png:hint14
+    points.push_back(createwall2(3,500,20,20,0));//Karakoram:diamond.png:hint15 - changed for now remember
+    points.push_back(createwall2(2,124,20,20,5000));//Jwalamukhi:diamond.png:hint29
+    points.push_back(createwall2(1090,145,20,20,0));//Dogra hall:diamond.png:hint23
     
 
     return points;
 }
 vector<pair<SDL_Rect,int>> set3Points(){
     vector<pair<SDL_Rect,int>> points;
-    points.push_back(createwall2(0,332,10,10,50));//Aravali:coin.png:hint16
-    points.push_back(createwall2(958,238,10,10,150));//Library:ruby.png:hint17
+    points.push_back(createwall2(0,332,20,20,50));//Aravali:coin.png:hint16
+    points.push_back(createwall2(958,238,20,20,150));//Library:ruby.png:hint17
     points.push_back(createwall2(1140,0,100,100,-175));//Kailash:warning8
-    points.push_back(createwall2(245,575,10,10,100));//Nalanda:emerald.png:hint18
-    points.push_back(createwall2(552,99,10,10,200));//Satpura:sapphire.png:hint20
+    points.push_back(createwall2(245,575,20,20,100));//Nalanda:emerald.png:hint18
+    points.push_back(createwall2(552,99,20,20,200));//Satpura:sapphire.png:hint20
     points.push_back(createwall2(668,461,100,100,-25));//Football ground:warning9
-    points.push_back(createwall2(885,62,10,10,75));//Biotech lawns:silver.png:hint22
-    points.push_back(createwall2(1093,242,10,10,175));//LHC:gold.png:hint28
+    points.push_back(createwall2(885,62,20,20,75));//Biotech lawns:silver.png:hint22
+    points.push_back(createwall2(1093,242,20,20,175));//LHC:gold.png:hint28
     points.push_back(createwall2(350,495,100,100,-150));//SAC:warning7
-    points.push_back(createwall2(484,698,10,10,25));//OAT:pearl.png:hint24
-    points.push_back(createwall2(3,500,10,10,0));//Karakoram:diamond.png:hint15 - changed for now remember
-    points.push_back(createwall2(2,124,10,10,0));//Jwalamukhi:diamond.png:hint29
-    points.push_back(createwall2(1090,145,10,10,5000));//Dogra hall:diamond.png:hint23
+    points.push_back(createwall2(484,698,20,20,25));//OAT:pearl.png:hint24
+    points.push_back(createwall2(3,500,20,20,0));//Karakoram:diamond.png:hint15 - changed for now remember
+    points.push_back(createwall2(2,124,20,20,0));//Jwalamukhi:diamond.png:hint29
+    points.push_back(createwall2(1090,145,20,20,5000));//Dogra hall:diamond.png:hint23
     
     return points;
 }
