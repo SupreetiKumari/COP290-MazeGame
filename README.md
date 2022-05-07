@@ -54,7 +54,7 @@ Our folder COP290-MazeGame consists of the following contents:
 - IITD Maze Treasure Hunt.pdf: Slides explaining the crux of our game
 - Readme.md
 
-A brief description of the files contained within client/server folders:
+### A brief description of the files contained within client/server folders:
 
 - hints folder: Consists of 30 hints to the locations where treasures are hidden. 
 - warning folder: Consists of 9 warnings about restricted areas.
