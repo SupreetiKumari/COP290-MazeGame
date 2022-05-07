@@ -109,4 +109,5 @@ A brief description of the files contained within client/server folders:
 
 ## CODE IMPLEMENTATION-
 
-1. Our code consists of three settings and we have used randomization for calculating which setting the user gets, using the rand function.
+1. Our code consists of three settings and we have used randomization for calculating which setting the user gets, using the rand function.We have maintained 2 arrays for checking if we already got some treasure / penalty both of which are completely distinct. We have used the render function to display the popups of penalty, warning and treasure and used SDl_delay for keeping it for some time. With the help of keyevents function we are able to enter inside a building and move out of a building. 
+2. In each of the respective setting we have functions caleed set1point1s( for example) which enables us to hide diamond for example in karakoram. The statement - clientdata = player1.sendrecieve(data) helps in movind the required data between the server and the client. The getopponentdata function helps in breaking down that data into chunks.
