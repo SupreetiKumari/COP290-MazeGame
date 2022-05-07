@@ -93,18 +93,16 @@ A brief description of the files contained within client/server folders:
 - warning folder: Consists of 9 warnings about restricted areas.
 - treasure: Consists of 8 treasures. These pop-up when you successfully find the hidden treasure using the hints provided. They add to your score depending upon the treasure you found.
 - penalty: Consists of 9 penalties which pop-up when you enter restricted areas. They decrease your score depending upon the area you stumbled upon.
-<br>
-
-1. LTexture.cpp- This file contains the class-LTexture and its constructor, deconstructor and functions.
-2. Dot.cpp- This file contains the class-Dot ( this the class for the player ) and its constructor, deconstructor and functions.
-3. helper.cpp- This contains the helper functions that we have used in our main program for example setwalls etc.
-4. sdl_helper.cpp- This contains some other helper functions which mainly use SDL.
-5. LTimer.cpp - This contains the Timer class for handling time-related jobs.
-6. music.hpp - This is the file with the help of which we carry out music related job.
-7. server.hpp- This the file which is present in server folder and is used by the person who is the server. It contains sendreceive function which is the main function for sending and receiving data.
-8. client.hpp- This the file which is present in client folder and is used by the person who is the client. It contains sendreceive function which is the main function for sending and receiving data.
-9. cop.cpp - This is the main file which contains the entire implementation and code.
-10. Makefile- This is the make file and is separate for the two folders- server and client.
+- LTexture.cpp- This file contains the class-LTexture and its constructor, deconstructor and functions.
+- Dot.cpp- This file contains the class-Dot ( this the class for the player ) and its constructor, deconstructor and functions.
+- helper.cpp- This contains the helper functions that we have used in our main program for example setwalls etc.
+- sdl_helper.cpp- This contains some other helper functions which mainly use SDL.
+- LTimer.cpp - This contains the Timer class for handling time-related jobs.
+- music.hpp - This is the file with the help of which we carry out music related job.
+- server.hpp- This the file which is present in server folder and is used by the person who is the server. It contains sendreceive function which is the main function for sending and receiving data.
+- client.hpp- This the file which is present in client folder and is used by the person who is the client. It contains sendreceive function which is the main function for sending and receiving data.
+- cop.cpp - This is the main file which contains the entire implementation and code.
+- Makefile- This is the make file and is separate for the two folders- server and client.
 
 
 ## CODE IMPLEMENTATION-
