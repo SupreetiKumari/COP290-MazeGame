@@ -52,6 +52,11 @@ Contributed by: Arushi Goyal(2020CS50418) and Supreeti Kumari(2020CS10396)<br>
 - Losing screen: <br><br>![](client/resources/gameover.png)
 - Game over screen: <br><br>![](client/resources/gamefinish.png)
 
+### Players:
+
+- Player1: <br><br>![](client/resources/player1.png)      
+- Player2: <br><br>![](client/resources/player2.png)
+
 ## How to run the game:
 
 1. Navigate to the location on your system where you want to clone the repository.
