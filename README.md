@@ -36,6 +36,13 @@ Contributed by: Arushi Goyal(2020CS50418) and Supreeti Kumari(2020CS10396)<br>
 
 ---
 
+### Different maps used in our game:
+
+- Main map for IITD campus:<br>![](client/resources/background.png)
+- Dogra Hall: <br> ![](client/resources/dograhall.png)
+- Karakoram:<br>![](client/resources/karakoram.png)
+- Jwalamukhi:<br>![](client/resources/jwalamukhi.png)
+
 ## How to run the game:
 
 1. Navigate to the location on your system where you want to clone the repository.
