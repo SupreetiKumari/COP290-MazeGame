@@ -79,4 +79,9 @@ Files description-
 2. Dot.cpp- This file contains the class-Dot ( this the class for the player ) and its constructor, deconstructor and functions.
 3. helper.cpp- This contains the helper functions that we have used in our main program for example setwalls etc.
 4. sdl_helper.cpp- This contains some other helper functions which mainly uses SDL.
+5. LTimer.cpp - This contains the Timer class for handling time related jobs.
+6. music.hpp - This is the file with the help of which we carry out music related job.
+7. server.hpp- This the file which is present in server folder and is used by the person who is the server. It contains sendreceive function which is the main function for sending and receiving data.
+8. client.hpp- This the file which is present in client folder and is used by the person who is the client. It contains sendreceive function which is the main function for sending and receiving data.
+9. cop.cpp - This is the main file which contains the entire implementation and code.
 
