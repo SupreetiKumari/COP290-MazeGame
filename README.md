@@ -71,3 +71,8 @@ A brief description of the files contained within client/server folders:
 8. client.hpp- This the file which is present in client folder and is used by the person who is the client. It contains sendreceive function which is the main function for sending and receiving data.
 9. cop.cpp - This is the main file which contains the entire implementation and code.
 10. Makefile- this is the make file and is separate for the two folders- server and client.
+
+
+## CODE IMPLEMENTATION-
+
+1. Our code consists of three settings and we have used randomization for calculating which setting the user gets, using the rand function.
