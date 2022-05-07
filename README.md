@@ -57,6 +57,18 @@ Contributed by: Arushi Goyal(2020CS50418) and Supreeti Kumari(2020CS10396)<br>
 - Player1: <br><br>![](client/resources/player1.png)      
 - Player2: <br><br>![](client/resources/player2.png)
 
+### Hint Example:
+![](client/hints/hint1.png)<br>
+
+### Warning Example:
+![](client/warning/warning1.png)<br>
+
+### Treasure Example:
+![](client/treasure/ruby.png)<br>
+
+### Penalty Example:
+![](client/penalty/penalty1.png)    
+
 ## How to run the game:
 
 1. Navigate to the location on your system where you want to clone the repository.
@@ -81,17 +93,17 @@ A brief description of the files contained within client/server folders:
 - warning folder: Consists of 9 warnings about restricted areas.
 - treasure: Consists of 8 treasures. These pop-up when you successfully find the hidden treasure using the hints provided. They add to your score depending upon the treasure you found.
 - penalty: Consists of 9 penalties which pop-up when you enter restricted areas. They decrease your score depending upon the area you stumbled upon.
-- 
+<br>
 1. LTexture.cpp- This file contains the class-LTexture and its constructor, deconstructor and functions.
 2. Dot.cpp- This file contains the class-Dot ( this the class for the player ) and its constructor, deconstructor and functions.
 3. helper.cpp- This contains the helper functions that we have used in our main program for example setwalls etc.
-4. sdl_helper.cpp- This contains some other helper functions which mainly uses SDL.
-5. LTimer.cpp - This contains the Timer class for handling time related jobs.
+4. sdl_helper.cpp- This contains some other helper functions which mainly use SDL.
+5. LTimer.cpp - This contains the Timer class for handling time-related jobs.
 6. music.hpp - This is the file with the help of which we carry out music related job.
 7. server.hpp- This the file which is present in server folder and is used by the person who is the server. It contains sendreceive function which is the main function for sending and receiving data.
 8. client.hpp- This the file which is present in client folder and is used by the person who is the client. It contains sendreceive function which is the main function for sending and receiving data.
 9. cop.cpp - This is the main file which contains the entire implementation and code.
-10. Makefile- this is the make file and is separate for the two folders- server and client.
+10. Makefile- This is the make file and is separate for the two folders- server and client.
 
 
 ## CODE IMPLEMENTATION-
