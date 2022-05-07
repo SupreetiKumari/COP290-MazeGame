@@ -38,10 +38,19 @@ Contributed by: Arushi Goyal(2020CS50418) and Supreeti Kumari(2020CS10396)<br>
 
 ### Different maps used in our game:
 
-- Main map for IITD campus:<br>![](client/resources/background.png)
-- Dogra Hall: <br> ![](client/resources/dograhall.png)
-- Karakoram:<br>![](client/resources/karakoram.png)
-- Jwalamukhi:<br>![](client/resources/jwalamukhi.png)
+- Main map for IITD campus:<br><br>![](client/resources/background.png)
+- Dogra Hall: <br><br> ![](client/resources/dograhall.png)
+- Karakoram:<br><br>![](client/resources/karakoram.png)
+- Jwalamukhi:<br><br>![](client/resources/jwalamukhi.png)
+
+### Different screens:
+
+- Start screen: <br><br>![](client/resources/startmenu.png)
+- Instruction screen: <br><br>![](client/resources/okmenu.png)
+- Winning screen1: <br><br>![](client/resources/gamewon.png)
+- Winning screen2: <br><br>![](client/resources/gamewon1.png)
+- Losing screen: <br><br>![](client/resources/gameover.png)
+- Game over screen: <br><br>![](client/resources/gamefinish.png)
 
 ## How to run the game:
 
