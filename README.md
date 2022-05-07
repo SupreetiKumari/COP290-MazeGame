@@ -61,20 +61,6 @@ A brief description of the files contained within client/server folders:
 - treasure: Consists of 8 treasures. These pop-up when you successfully find the hidden treasure using the hints provided. They add to your score depending upon the treasure you found.
 - penalty: Consists of 9 penalties which pop-up when you enter restricted areas. They decrease your score depending upon the area you stumbled upon.
 - 
-
-
-
-
-
-
-
-
-
-
-
-
-Files description-
-
 1. LTexture.cpp- This file contains the class-LTexture and its constructor, deconstructor and functions.
 2. Dot.cpp- This file contains the class-Dot ( this the class for the player ) and its constructor, deconstructor and functions.
 3. helper.cpp- This contains the helper functions that we have used in our main program for example setwalls etc.
@@ -84,4 +70,4 @@ Files description-
 7. server.hpp- This the file which is present in server folder and is used by the person who is the server. It contains sendreceive function which is the main function for sending and receiving data.
 8. client.hpp- This the file which is present in client folder and is used by the person who is the client. It contains sendreceive function which is the main function for sending and receiving data.
 9. cop.cpp - This is the main file which contains the entire implementation and code.
-
+10. Makefile- this is the make file and is separate for the two folders- server and client.
