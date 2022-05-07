@@ -60,7 +60,17 @@ A brief description of the files contained within client/server folders:
 - warning folder: Consists of 9 warnings about restricted areas.
 - treasure: Consists of 8 treasures. These pop-up when you successfully find the hidden treasure using the hints provided. They add to your score depending upon the treasure you found.
 - penalty: Consists of 9 penalties which pop-up when you enter restricted areas. They decrease your score depending upon the area you stumbled upon.
-- 
+- maze folder: Consists of maze.cpp file which we used to generate our main map for IITD.
+- resources: Consists of various resources that we have used for our game like the game music, png images for players,maps, gameover and gamewonscreen etc., fonts in ttf format etc.
+- Dot.cpp
+- LTexture.cpp
+- LTimer.cpp
+- client.hpp /server.hpp
+- cop.cpp
+- helper.cpp
+- music.hpp
+- sdl_helper.cpp
+- Makefile
 
 
 
