@@ -46,6 +46,21 @@ Contributed by: Arushi Goyal(2020CS50418) and Supreeti Kumari(2020CS10396)<br>
 6. Run ``` make ```.
 7. The game window is visible.
 
+---
+Our folder COP290-MazeGame consists of the following contents:
+
+- client folder
+- server folder
+- IITD Maze Treasure Hunt.pdf: Slides explaining the crux of our game
+- Readme.md
+
+A brief description of the files contained within client/server folders:
+
+- hints folder: Consists of 30 hints to the locations where treasures are hidden. 
+- warning folder: Consists of 9 warnings about restricted areas.
+- treasure: Consists of 8 treasures. These pop-up when you successfully find the hidden treasure using the hints provided. They add to your score depending upon the treasure you found.
+- penalty: Consists of 9 penalties which pop-up when you enter restricted areas. They decrease your score depending upon the area you stumbled upon.
+- 
 
 
 
